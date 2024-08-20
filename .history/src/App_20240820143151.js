@@ -1,9 +1,8 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-// Add useNavigate to import
 
+// App.js
+import { useState, useEffect } from "react";
 function App() {
     // Add code to mock user authentication
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -26,7 +25,7 @@ function App() {
         // navigates to Login route if user is logged out
       navigate("/login");
     };
-  }, [isLoggedIn, navigate]);
+  }, [isLoggedIn]);
 
   return (
     <div className="app">

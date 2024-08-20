@@ -26,7 +26,7 @@ function App() {
         // navigates to Login route if user is logged out
       navigate("/login");
     };
-  }, [isLoggedIn, navigate]);
+  }, [isLoggedIn]);
 
   return (
     <div className="app">
